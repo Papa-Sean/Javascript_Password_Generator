@@ -22,17 +22,15 @@
           <textarea
             readonly
             id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
           ></textarea>
         </div>
         <div>
             <!--added a slider to the form-->
-            <form id="pwgen" class="inputs">
-                <label for="AmmountRange">Select the number of Charecters</label>
+            <form id="form" class="inputs">
+                <label for="AmountRange">Select the number of Charecters</label>
                     <div class="NumberBox">
-                        <input type="range" min="8" max="128" value="10" id="AmmountRange">
-                        <input type="number-input" min="8" max="128" value="10" id="AmmountNumber">
+                        <input type="range" min="8" max="128" value="10" id="AmountRange">
+                        <input type="number-input" min="8" max="128" value="10" id="AmountNumber">
                     </div>        
                 <br>
             
@@ -54,10 +52,9 @@
         </div>
         <div class="card-footer">
          <!--added button type-->
-          <button type="submit" id="generate" class="btn">Generate Password</button>
+          <button type="submit" id="submit" class="btn">Generate Password</button>
         </div>
       </div>
-    <script src="script.js"></script>
     </div>
   </body>
 </html>
