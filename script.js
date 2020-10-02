@@ -23,6 +23,9 @@ form.addEventListener('submit', e => {
   const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
 })
 
+function generatePassword(characterAmount, includeSymbols, includeUppercase, includeNumbers){
+  
+}
 //linked the slider/input boxes
 function syncAmmountCH(e) {
     const value = e.target.value

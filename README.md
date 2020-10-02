@@ -12,4 +12,13 @@ Prompts I will include:
 Investigate code I have
     Went through an ID tags
     Tested changing the event listen tag to promp user successfully with a "hello world" alert
-    
+    Could not figure out how to make the app work through prompts
+    Added criterea form with slider/input
+    added check boxes for other criterea 
+    linked the slider/input boxes
+HTML
+    Added button type
+    added form with slider and check boxes
+JS
+    Linked form slider/text box
+    added eventListen for each box on the form
