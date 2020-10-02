@@ -1,17 +1,21 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+const AmmountRange = document.getElementById
+('AmmountRange')
+const AmmountNumber = document.getElementById
+('AmmountNumber')
+const UPPERCASE = document.getElementById
+('UPPERCASE')
+const Nmbr = document.getElementById
+('Nmbr')
+const Special = document.getElementById
+('Special')
 
-  passwordText.value = password;
+AmmountRange.addEventListener('input', syncAmmountCH)
+AmmountNumber.addEventListener('input', syncAmmountCH)
 
+//linked the slider/input boxes
+function syncAmmountCH(e) {
+    const value = e.target.value
+    AmmountRange.value = value
+    AmmountNumber.value = value
 }
-//added an "alert" prompt to test by event listener button//
-function prompt1() {
-    alert ("Hello World!");
-  }
-// Add event listener to generate button
-generateBtn.addEventListener("click", prompt1);
