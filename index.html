@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -26,11 +26,37 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+        <div>
+            <!--added a slider to the form-->
+            <form id="pwgen" class="inputs">
+                <label for="AmmountRange">Select the number of Charecters</label>
+                    <div class="NumberBox">
+                        <input type="range" min="8" max="128" value="10" id="AmmountRange">
+                        <input type="number-input" min="8" max="128" value="10" id="AmmountNumber">
+                    </div>        
+                <br>
+            
+
+                <label for="UPPERCASE">Include UPPERCASE Letters:</label>
+                <input type="checkbox" id="UPPERCASE">
+
+                <br>
+
+                <label for="Nmbr">Include Numbers:</label>
+                <input type="checkbox" id="Nmbr">
+
+                <br>
+
+                <label for="Special">Include Special Symbols:</label>
+                <input type="checkbox" id="Special">
+
+            </form>
+        </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
-    </div>
     <script src="script.js"></script>
+    </div>
   </body>
 </html>
